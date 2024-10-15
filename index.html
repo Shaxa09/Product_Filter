@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spisok Tovarov</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add new product to available products, write filter by price</h1>
+        <button id="add-product-button">Add product</button>
+        <div class="filters">
+            <input type="text" placeholder="Товар от:" id="price-from" value="$100">
+            <input type="text" placeholder="Товар до:" id="price-to" value="$500">
+            <button id="filter-button">Filter</button>
+        </div>
+        
+        <div class="products-table">
+            <div class="product-card" id="product-1">
+                <span>Yogurt</span>
+                <span class="price">25$</span>
+            </div>
+            <div class="product-card" id="product-2">
+                <span>Joe Banks</span>
+                <span class="price">1702$</span>
+            </div>
+            <div class="product-card" id="product-3">
+                <span>Louis Marshall</span>
+                <span class="price">1425$</span>
+            </div>
+            <div class="product-card" id="product-4">
+                <span>Ronald Cooper</span>
+                <span class="price">1972$</span>
+            </div>
+            <div class="product-card" id="product-5">
+                <span>Ethan Brewer</span>
+                <span class="price">815$</span>
+            </div>
+            <div class="product-card" id="product-6">
+                <span>Will Brawer</span>
+                <span class="price">844$</span>
+            </div>
+            <div class="product-card" id="product-7">
+                <span>Steve Reid</span>
+                <span class="price">1302$</span>
+            </div>
+            <div class="product-card" id="product-8">
+                <span>Alex Lawson</span>
+                <span class="price">1015$</span>
+            </div>
+            <div class="product-card" id="product-9">
+                <span>Roy Garrett</span>
+                <span class="price">1678$</span>
+            </div>
+            <div class="product-card" id="product-10">
+                <span>George Garrett</span>
+                <span class="price">1145$</span>
+            </div>
+            <div class="product-card" id="product-11">
+                <span>Aaron Henderson</span>
+                <span class="price">874$</span>
+            </div>
+            <div class="product-card" id="product-12">
+                <span>Nicolas Rivera</span>
+                <span class="price">1878$</span>
+            </div>
+            <div class="product-card" id="product-13">
+                <span>Jerry Diaz</span>
+                <span class="price">750$</span>
+            </div>
+            <div class="product-card" id="product-14">
+                <span>Ronald Garrett</span>
+                <span class="price">1509$</span>
+            </div>
+            <div class="product-card" id="product-15">
+                <span>Charles Fuller</span>
+                <span class="price">304$</span>
+            </div>
+            <div class="product-card" id="product-16">
+                <span>Chris Wallace</span>
+                <span class="price">551$</span>
+            </div>
+        </div>
+    </div>
+
+
+    <aside id="aside-panel">
+        <form id="add-product-form">
+            <label for="product-name">Product name:</label>
+            <input type="text" id="product-name" placeholder="Enter name">
+
+            <label for="product-price">Product price:</label>
+            <input type="text" id="product-price" placeholder="Enter price">
+
+            <button type="submit">Add</button>
+            <button type="button" id="close-aside">Close</button>
+        </form>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
